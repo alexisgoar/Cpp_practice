@@ -1,8 +1,10 @@
 #include "../include/hello.hpp"
 #include <iostream>
 
+using namespace std; 
+
 void hello::say_hello(){
 
-    std::cout << "Hello, world!"; 
+    cout << "Hello, world!\n"; 
 
 }

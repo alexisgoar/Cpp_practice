@@ -9,7 +9,26 @@ add_library(
     src/hello.cpp
 )
 
+add_library(
+    functions
+    include/functions.hpp
+    src/functions.cpp
+)
+
+add_library(
+    userdef
+    include/userdefinedtypes.hpp
+    src/userdefinedtypes.cpp
+)
+
+
+add_library(
+    classes
+    include/classes.hpp
+    src/classes.cpp
+)
+
 # add the executable
 add_executable(Cpp_practice src/main.cpp)
 
-target_link_libraries(Cpp_practice PRIVATE say_hello)
+target_link_libraries(Cpp_practice PRIVATE say_hello functions userdef classes )
